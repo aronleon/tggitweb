@@ -104,7 +104,7 @@ async function getTabsFromLink() {
         formData.append('dt', dt);
 
         try {
-            const response = await fetch('http://192.168.0.108:5000/convertLink', {
+            const response = await fetch('https://192.168.0.108:5000/convertLink', {
                 method: 'POST',
                 body: formData
             });
